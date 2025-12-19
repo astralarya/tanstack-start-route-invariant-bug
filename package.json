@@ -12,6 +12,7 @@
     "check": "prettier --write . && eslint --fix"
   },
   "dependencies": {
+    "@pixi/react": "^8.0.5",
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/react-devtools": "^0.7.0",
     "@tanstack/react-router": "^1.132.0",
@@ -21,6 +22,7 @@
     "@tanstack/router-plugin": "^1.132.0",
     "lucide-react": "^0.544.0",
     "nitro": "latest",
+    "pixi.js": "^8.14.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tailwindcss": "^4.0.6",

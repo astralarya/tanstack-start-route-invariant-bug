@@ -1,14 +1,15 @@
 import { createFileRoute, Outlet } from '@tanstack/react-router'
+import { Application } from '@pixi/react'
 
 export const Route = createFileRoute('/_pathless_layout/_nested_layout')({
   component: RouteComponent,
+  ssr: false,
 })
 
 function RouteComponent() {
   return (
-    <div>
-      <div>Hello "/_pathless_layout/_nested_layout"!</div>
+    <Application>
       <Outlet />
-    </div>
+    </Application>
   )
 }
