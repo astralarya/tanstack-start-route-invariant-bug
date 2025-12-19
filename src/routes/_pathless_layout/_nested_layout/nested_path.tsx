@@ -7,5 +7,10 @@ export const Route = createFileRoute(
 })
 
 function RouteComponent() {
-  return <div>Hello "/_pathless_layout/_nested_layout/nested_path"!</div>
+  return (
+    <mesh>
+      <boxGeometry />
+      <meshStandardMaterial />
+    </mesh>
+  )
 }

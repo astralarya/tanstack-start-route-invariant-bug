@@ -12,6 +12,7 @@
     "check": "prettier --write . && eslint --fix"
   },
   "dependencies": {
+    "@react-three/fiber": "^9.4.2",
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/react-devtools": "^0.7.0",
     "@tanstack/react-router": "^1.132.0",
@@ -24,6 +25,7 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tailwindcss": "^4.0.6",
+    "three": "^0.182.0",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "devDependencies": {
@@ -34,6 +36,7 @@
     "@types/node": "^22.10.2",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.182.0",
     "@vitejs/plugin-react": "^5.0.4",
     "jsdom": "^27.0.0",
     "prettier": "^3.5.3",

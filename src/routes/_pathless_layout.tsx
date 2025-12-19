@@ -21,7 +21,6 @@ function RouteComponent() {
           Link to "/nested_path"
         </Link>
       </div>
-      <div>Hello "/_pathless_layout"!</div>
       <Outlet />
     </div>
   )
