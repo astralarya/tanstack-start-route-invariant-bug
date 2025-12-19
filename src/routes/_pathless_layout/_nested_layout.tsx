@@ -1,6 +1,5 @@
 import { createFileRoute, Outlet } from '@tanstack/react-router'
-import { Canvas } from '@react-three/fiber'
-import { WebGPURenderer } from 'three/webgpu'
+import { PixiThreeCanvas } from '@/componnts/pixi-three-canvas'
 
 export const Route = createFileRoute('/_pathless_layout/_nested_layout')({
   component: RouteComponent,
@@ -9,14 +8,8 @@ export const Route = createFileRoute('/_pathless_layout/_nested_layout')({
 
 function RouteComponent() {
   return (
-    <Canvas
-      gl={async (props) => {
-        const renderer = new WebGPURenderer(props as any)
-        await renderer.init()
-        return renderer
-      }}
-    >
+    <PixiThreeCanvas className="w-full h-[calc(100lvh-4rem)]">
       <Outlet />
-    </Canvas>
+    </PixiThreeCanvas>
   )
 }
