@@ -8,5 +8,37 @@ export const Route = createFileRoute(
 })
 
 function RouteComponent() {
-  return <SpinnyCube />
+  return (
+    <>
+      <SpinnyCube position={[-2, -2, 0]} />
+      <SpinnyCube position={[0, -2, 0]} />
+      <SpinnyCube position={[2, -2, 0]} />
+      <SpinnyCube position={[-2, 0, 0]} />
+      <SpinnyCube position={[0, 0, 0]} />
+      <SpinnyCube position={[2, 0, 0]} />
+      <SpinnyCube position={[-2, 2, 0]} />
+      <SpinnyCube position={[0, 2, 0]} />
+      <SpinnyCube position={[2, 2, 0]} />
+
+      <SpinnyCube position={[-2, -2, -2]} />
+      <SpinnyCube position={[0, -2, -2]} />
+      <SpinnyCube position={[2, -2, -2]} />
+      <SpinnyCube position={[-2, 0, -2]} />
+      <SpinnyCube position={[0, 0, -2]} />
+      <SpinnyCube position={[2, 0, -2]} />
+      <SpinnyCube position={[-2, 2, -2]} />
+      <SpinnyCube position={[0, 2, -2]} />
+      <SpinnyCube position={[2, 2, -2]} />
+
+      <SpinnyCube position={[-2, -2, 2]} />
+      <SpinnyCube position={[0, -2, 2]} />
+      <SpinnyCube position={[2, -2, 2]} />
+      <SpinnyCube position={[-2, 0, 2]} />
+      <SpinnyCube position={[0, 0, 2]} />
+      <SpinnyCube position={[2, 0, 2]} />
+      <SpinnyCube position={[-2, 2, 2]} />
+      <SpinnyCube position={[0, 2, 2]} />
+      <SpinnyCube position={[2, 2, 2]} />
+    </>
+  )
 }
