@@ -1,4 +1,4 @@
-import { SpinnyCube } from '@/componnts/spinny-cube'
+import { SpinnyCube } from '@/components/spinny-cube'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute(
