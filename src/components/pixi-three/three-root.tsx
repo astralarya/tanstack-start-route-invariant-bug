@@ -9,7 +9,6 @@ import {
   type ThreeToJSXElements,
   unmountComponentAtNode,
 } from "@react-three/fiber";
-import { useContextBridge } from "its-fine";
 import { type WebGPURenderer as PixiWebGPURenderer } from "pixi.js";
 import {
   type PropsWithChildren,
@@ -21,6 +20,8 @@ import {
 import { WebGPURenderer } from "three/webgpu";
 import * as THREE from "three/webgpu";
 
+import { useBridge } from "./use-bridge";
+
 extend(THREE as unknown as ConstructorRepresentation);
 
 declare module "@react-three/fiber" {
@@ -28,12 +29,12 @@ declare module "@react-three/fiber" {
   interface ThreeElements extends ThreeToJSXElements<typeof THREE> {}
 }
 
-export interface ThreeSceneProps extends PropsWithChildren {
+export interface ThreeRootProps extends PropsWithChildren {
   eventSource?: RefObject<HTMLElement | null>;
 }
 
-export function ThreeScene({ children, eventSource }: ThreeSceneProps) {
-  const Bridge = useContextBridge();
+export function ThreeRoot({ children, eventSource }: ThreeRootProps) {
+  const Bridge = useBridge();
   const pixi = useApplication();
   const threeRootRef = useRef<ReconcilerRoot<HTMLCanvasElement>>(null);
   const [cleanupFn, setCleanupFn] = useState<(() => void) | null>(null);

@@ -24,7 +24,7 @@
     "its-fine": "^2.0.0",
     "lucide-react": "^0.544.0",
     "nitro": "latest",
-    "pixi.js": "^8.14.3",
+    "pixi.js": "https://pkg.pr.new/pixijs/pixijs/pixi.js@11816",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tailwindcss": "^4.0.6",

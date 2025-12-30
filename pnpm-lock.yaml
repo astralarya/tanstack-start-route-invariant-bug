@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@pixi/react':
         specifier: ^8.0.5
-        version: 8.0.5(@types/react@19.2.7)(pixi.js@8.14.3)(react@19.2.3)
+        version: 8.0.5(@types/react@19.2.7)(pixi.js@https://pkg.pr.new/pixijs/pixijs/pixi.js@11816)(react@19.2.3)
       '@react-three/fiber':
         specifier: ^9.4.2
         version: 9.4.2(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(three@0.182.0)
@@ -45,8 +45,8 @@ importers:
         specifier: latest
         version: 3.0.1-alpha.1(lru-cache@11.2.4)(rollup@4.53.5)(vite@7.3.0(@types/node@22.19.3)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.21.0))
       pixi.js:
-        specifier: ^8.14.3
-        version: 8.14.3
+        specifier: https://pkg.pr.new/pixijs/pixijs/pixi.js@11816
+        version: https://pkg.pr.new/pixijs/pixijs/pixi.js@11816
       react:
         specifier: ^19.2.0
         version: 19.2.3
@@ -758,6 +758,7 @@ packages:
 
   '@pixi/react@8.0.5':
     resolution: {integrity: sha512-Z1VRdnv9Gh+lTLzNKjpS7GaTNDjUxRVJNtIdtK2i0sCpigvjx5mvJ72EPLhBFgepB6j3ZCkL0YBb6BqgTGbhGA==}
+    version: 8.0.5
     peerDependencies:
       pixi.js: ^8.2.6
       react: '>=19.0.0'
@@ -2393,8 +2394,9 @@ packages:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
 
-  pixi.js@8.14.3:
-    resolution: {integrity: sha512-6xGYARV8D9E/fO1c2NmYn+k2dQ5oZldVm5tNlLQJ8obTlOQXdL5QpMc217qTpRyHVDFaw5eoFCLF1gr6p5ZcjQ==}
+  pixi.js@https://pkg.pr.new/pixijs/pixijs/pixi.js@11816:
+    resolution: {tarball: https://pkg.pr.new/pixijs/pixijs/pixi.js@11816}
+    version: 8.15.0-rc
 
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
@@ -3557,10 +3559,10 @@ snapshots:
 
   '@pixi/colord@2.9.6': {}
 
-  '@pixi/react@8.0.5(@types/react@19.2.7)(pixi.js@8.14.3)(react@19.2.3)':
+  '@pixi/react@8.0.5(@types/react@19.2.7)(pixi.js@https://pkg.pr.new/pixijs/pixijs/pixi.js@11816)(react@19.2.3)':
     dependencies:
       its-fine: 2.0.0(@types/react@19.2.7)(react@19.2.3)
-      pixi.js: 8.14.3
+      pixi.js: https://pkg.pr.new/pixijs/pixijs/pixi.js@11816
       react: 19.2.3
       react-reconciler: 0.31.0(react@19.2.3)
     transitivePeerDependencies:
@@ -5318,7 +5320,7 @@ snapshots:
 
   picomatch@4.0.3: {}
 
-  pixi.js@8.14.3:
+  pixi.js@https://pkg.pr.new/pixijs/pixijs/pixi.js@11816:
     dependencies:
       '@pixi/colord': 2.9.6
       '@types/css-font-loading-module': 0.0.12

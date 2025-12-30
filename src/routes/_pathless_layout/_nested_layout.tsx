@@ -1,5 +1,5 @@
 import { createFileRoute, Outlet } from '@tanstack/react-router'
-import { PixiThreeCanvas } from '@/components/pixi-three-canvas'
+import { PixiThreeCanvas } from '@/components/pixi-three/pixi-three-canvas'
 
 export const Route = createFileRoute('/_pathless_layout/_nested_layout')({
   component: RouteComponent,
